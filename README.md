@@ -17,9 +17,9 @@ You'll see 2 files in the aforementioned directory:
 ```
 
 ## Output details
-Lines in the second file don't have '-' in their titles.
+Lines in the second file don't have ```-``` in their titles.
 
-Lines in the first file match those videos which contain '-' in their titles. 
+Lines in the first file match those videos which contain ```-``` in their titles. 
 They're sorted and grouped by artist. Example:
 ```
 Artist: Black Pumas
@@ -33,5 +33,5 @@ However, there will be some bugs but that's because YouTube doesn't have a stand
 Therefore it's hard to parse the whole content of a playlist properly.
   
 A bug can occur if:
-- the video is named like that: <TrackID> - <Artist>
-- the Artist/TrackID contains '-'
+- the video is named like that: ```<TrackID> - <Artist>```
+- the Artist/TrackID contains ```-```
