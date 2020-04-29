@@ -3,11 +3,11 @@
 What motivated me to create this simple project was that I wanted to extract the content from a YouTube playlist, which contains 3500+ songs.
 
 # Preparation
-You have to export playlist's content to a text file (.txt) -- it can be done from that site for free:
+You have to export playlist's content to a ```txt file``` -- it can be done from that site for free:
 - https://www.tunemymusic.com/YouTube-to-File.php
 
 # Running the project
-Then you should pass that text file as an argument to the Main class. The result will be saved to ```/playlist-parser/export```.
+Then you should pass that ```txt file``` as an argument to the ```Main class```. The result will be saved to ```/playlist-parser/export```.
 
 # Output
 You'll see 2 files in the aforementioned directory:
