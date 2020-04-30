@@ -79,14 +79,15 @@ public class PlaylistParser {
                 ++totalSongsCount;
             }
         } catch (FileNotFoundException e) {
-            System.out.println("File hasn't been found...");
+            System.out.println("Txt file hasn't been found...");
         } catch (IOException e) {
-            System.out.println("A problem occurred while opening the main file...");
+            System.out.println("A problem occurred while opening the playlist txt file...");
         }
     }
 
     private void createExportDir() {
         File dir = new File(EXPORT_PATH);
+
         if (!dir.exists()) {
             dir.mkdir();
         }
@@ -111,7 +112,7 @@ public class PlaylistParser {
             file = new File(fileName);
             file.createNewFile();
         } catch (IOException e) {
-            System.out.println("A problem occurred when trying to create");
+            System.out.println("A problem occurred when trying to create " + fileName);
         }
 
         return file;
@@ -132,6 +133,7 @@ public class PlaylistParser {
 
             for (Map.Entry<String, Set<String>> entry : playlist.entrySet()) {
                 parsed.write("Artist: " + entry.getKey() + "\n");
+
                 for (String currentTrack : entry.getValue()) {
                     parsed.write(currentTrack + "\n");
                     ++parsedSongsCount;
