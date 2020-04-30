@@ -1,6 +1,6 @@
 # Intro
 
-What motivated me to create this simple project was that I wanted to extract the content from a YouTube playlist, which contains 3500+ songs.
+What motivated me to create this simple project was that I wanted to extract all **3500+** songs from a ```YouTube playlist```.
 
 # Preparation
 You have to export playlist's content to a ```txt file``` -- it can be done from that site for free:
@@ -17,21 +17,26 @@ You'll see 2 files in the aforementioned directory:
 ```
 
 ## Output details
-Lines in the second file don't have ```-``` in their titles.
+Songs in the second file don't have ```-``` in their titles.
 
-Lines in the first file match those videos which contain ```-``` in their titles. 
+Songs in the first file match those videos which contain ```-``` in their titles. 
 They're sorted and grouped by artist. Example:
 ```
 Artist: Black Pumas
-Colors
 Dirty, Dirty
+Colours
+
+Artist: The Main Squeeze
+Man in the Mirror
+Redbone
+Have a Cigar
 ```
 
 # Bugs
-However, there will be some bugs but that's because YouTube doesn't have a standard for naming music videos, for example: 
+However, there are some bugs but that's because YouTube doesn't have a standard for naming music videos, for example: 
 ```<Artist> - <TrackID>```.
-Therefore it's hard to parse the whole content of a playlist properly.
+Therefore, it's hard to parse the whole content of a playlist properly.
   
 A bug can occur if:
 - the video is named like that: ```<TrackID> - <Artist>```
-- the Artist/TrackID contains ```-```
+- either the Artist or TrackID contains ```-```
