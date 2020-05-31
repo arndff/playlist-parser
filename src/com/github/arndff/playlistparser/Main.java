@@ -5,7 +5,7 @@ public class Main {
         PlaylistParser playlistParser = new PlaylistParser();
 
         if (args.length != 1) {
-            System.err.println("You should prove exactly one argument:");
+            System.err.println("You should pass exactly one argument:");
             System.err.println("- playlist's txt file.");
             System.err.println("Terminating...");
             System.exit(1);

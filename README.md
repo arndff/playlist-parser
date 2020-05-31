@@ -39,4 +39,4 @@ Therefore, it's hard to parse the whole content of a playlist properly.
   
 A bug can occur if:
 - the video is named like that: ```<TrackID> - <Artist>```
-- either the Artist or TrackID contains ```-```
+- either the Artist or TrackID contains a ```-```
